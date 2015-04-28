@@ -44,12 +44,15 @@ group :development, :test do
 end
 
 
-gem 'simple_form'
-gem 'rack-git_sha'
-gem 'active_model_serializers'
-gem 'haml-rails'
-gem 'autoprefixer-rails'
-gem 'paranoia'
+gem 'simple_form', '~> 3.1.0'
+gem 'rack-git_sha', '~> 1.2.0'
+gem 'active_model_serializers', '~> 0.9.3'
+gem 'haml-rails', '~> 0.9.0'
+gem 'autoprefixer-rails', '~> 5.1.11'
+gem 'paranoia', '~> 2.1.2'
+
+gem 'foundation-rails', '~> 5.5.1.2'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
