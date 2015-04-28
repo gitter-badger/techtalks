@@ -1,12 +1,14 @@
-# Title
+# Tech Talks
 
-Enter a brief description of the project here.
+Host tech events with RSVP, Photo, Notifications, Videos and more.
+
+> A WIP project... most functionality is in development
 
 ## Install
 
 ```
-$ git clone git@github.com:username/project_name.git
-$ cd project_name
+$ git clone https://github.com/adambutler/tech_talks.git
+$ cd tech_talks
 $ bundle install
 $ rake db:create
 $ rake db:migrate
