@@ -51,8 +51,8 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'autoprefixer-rails', '~> 5.1.11'
 gem 'paranoia', '~> 2.1.2'
 gem 'friendly_id', '~> 5.1.0'
-
 gem 'foundation-rails', '~> 5.5.1.2'
+gem 'breadcrumbs_on_rails', '~> 2.3.0'
 
 group :development do
   gem 'better_errors'

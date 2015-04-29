@@ -10,4 +10,20 @@
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .row
+      .column.small-12
+        %br
+        - unless breadcrumbs.empty?
+          %ul.breadcrumbs
+            = render_breadcrumbs tag: :li, separator: ""
+
+        - if flash[:error]
+          = content_tag :div, :id => "flash_name", :class => "alert-box error" do
+            = flash[:error]
+            %a.close x
+        - if flash[:notice]
+          = content_tag :div, :id => "flash_name", :class => "alert-box success" do
+            = flash[:notice]
+            %a.close x
+
     = yield
