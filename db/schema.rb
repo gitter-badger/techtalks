@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150428203925) do
+ActiveRecord::Schema.define(version: 20150429114014) do
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title",       limit: 255
+    t.text     "description", limit: 65535
+    t.integer  "location_id", limit: 4
+    t.datetime "start_time"
+    t.datetime "endtime"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "group_id",    limit: 4
+  end
 
   create_table "groups", force: :cascade do |t|
     t.string   "title",        limit: 255
@@ -27,5 +38,18 @@ ActiveRecord::Schema.define(version: 20150428203925) do
   end
 
   add_index "groups", ["slug"], name: "index_groups_on_slug", unique: true, using: :btree
+
+  create_table "locations", force: :cascade do |t|
+    t.string   "title",              limit: 255
+    t.text     "description",        limit: 65535
+    t.string   "address_line_one",   limit: 255
+    t.string   "address_line_two",   limit: 255
+    t.string   "address_line_three", limit: 255
+    t.string   "city",               limit: 255
+    t.string   "postcode",           limit: 255
+    t.string   "country",            limit: 255
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
 
 end

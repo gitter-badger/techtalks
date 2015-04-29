@@ -1,1 +1,7 @@
 %h2= @group.title
+
+%h3 Events
+
+%ul
+  - @group.events.each do |event|
+    %li= event.title
