@@ -1,5 +1,9 @@
 class Event < ActiveRecord::Base
-  validates_presence_of :title
   belongs_to :group
   has_one :location
+
+  validates_presence_of :title, :group_id
+
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 end
