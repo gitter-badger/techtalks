@@ -1,5 +1,6 @@
 class GroupsController < ApplicationController
   before_filter :set_group, only: [:show]
+  before_filter :set_groups, only: [:index]
 
   def index
   end
@@ -29,5 +30,9 @@ class GroupsController < ApplicationController
 
   def set_group
     @group = Group.friendly.find(params[:id])
+  end
+
+  def set_groups
+    @groups = Group.all
   end
 end

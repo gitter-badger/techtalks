@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-js = Group.create({
+group = Group.create({
   title: "Bristol JS"
+})
+
+event = Event.create({
+  title: "Some event title",
+  group_id: group.id
 })

@@ -2,4 +2,4 @@
 
 %ul
   - @group.events.each do |event|
-    %li= event.title
+    %li= link_to event.title, [@group, event]
