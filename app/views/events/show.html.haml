@@ -1,1 +1,23 @@
-%h2= @event.title
+.row
+  .column.small-12.text-center
+    %h2= @event.title
+    %h3 1st April 2015 - Bristol - 55 RSVP's
+
+    %hr
+
+.row
+  .column.small-7
+    %p Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    %p Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper.
+    %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.
+  .column.small-5
+    - (1..50).each do |i|
+      .row
+        .column.small-4
+          %img.avatar{src: "http://api.randomuser.me/portraits/men/#{i}.jpg"}
+        .column.small-8.hard-left
+          %h5.tight Adam Butler
+          .meta Joined 1st April 2015
+          %p.subtle.tight Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+      %br
+%hr

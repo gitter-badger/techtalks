@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+$turquoise: #1abc9c;
+$turquoise-dark: #16a085;
+
+$green: #27ae60;
+$green-light: #2ecc71;
+
+$blue-light: #3498db;
+$blue: #2980b9;
+
+$purple-light: #9b59b6;
+$purple: #8e44ad;
+
+$stone-light: #34495e;
+$stone: #2c3e50;
+
+$yellow: #f1c40f;
+$yellow-dark: #f39c12;
+
+$orange: #e67e22;
+$orange-muted: #d35400;
+
+$red: #e74c3c;
+$red-dark: #c0392b;
+
+$white: #fff;
+$gray-light: #ecf0f1;
+$gray: #bdc3c7;
+$gray-dark: #95a5a6;
+$gray-darker: #7f8c8d;
+$black: #333; // <- its all lies! Muhaahaha!
+
+$spacing: 20px;
+
+body {
+  background: $orange;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZTY3ZTIyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U3NGMzYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-45deg,  $orange 0%, $red 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$orange), color-stop(100%,$red));
+  background: -webkit-linear-gradient(-45deg,  $orange 0%,$red 100%);
+  background: -o-linear-gradient(-45deg,  $orange 0%,$red 100%);
+  background: -ms-linear-gradient(-45deg,  $orange 0%,$red 100%);
+  background: linear-gradient(135deg,  $orange 0%,$red 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='$red',GradientType=1 );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+.meta {
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  background: $gray-dark;
+  display: inline-block;
+  padding: 0 4px;
+  color: $white;
+  margin-bottom: $spacing / 2;
+}
+
+.hard-left {
+  border-left: 2px solid $gray-light;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+p {
+  &.subtle {
+    font-size: 0.75em;
+  }
+}
+
+.subtle {
+  color: $gray-darker;
+}
+
+.card {
+  background: $white;
+  padding: $spacing;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.avatar {
+  border-radius: 100%;
+}
+
+.tight {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  h1 {
+    font-size: 3.5em;
+    color: $white;
+    padding-bottom: $spacing;
+  }
+}

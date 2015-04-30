@@ -5,12 +5,13 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title= content_for?(:title) ? yield(:title) : "foundation-rails"
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Ubuntu:300,500,700"
+    = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .row
+    .row-fluid
       .column.small-12
         %br
         - unless breadcrumbs.empty?
@@ -26,4 +27,10 @@
             = flash[:notice]
             %a.close x
 
-    = yield
+    %br
+
+    %header
+      %h1 techtalks.io
+
+    .card
+      = yield
