@@ -1,0 +1,58 @@
+.row
+  .columns.small-12
+
+    %h2 Typography
+    %section
+
+      %h1 I am a heading type h1
+      %h2 I am a heading type h2
+      %h3 I am a heading type h3
+      %h4 I am a heading type h4
+      %h5 I am a heading type h5
+      %h6 I am a heading type h6
+
+      %p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.
+      %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor.
+
+      %p
+        I am a string of text
+        %a{href: "#"} with a link
+        do you like?
+
+    %h2 Buttons
+    %section
+      %a.button{href: "#"} I am a primary button
+      %a.button.secondary{href: "#"} I am a secondary button
+      %a.button.success{href: "#"} I am a success button
+      %a.button.alert{href: "#"} I am an alert button
+      %a.button.expand{href: "#"} I am an expanded button
+
+    %h2 Colors
+    %section
+      .row
+        .columns.small-3
+          .swatch{style: "background-color: #e67e22;"}
+            $orange | #e67e22
+        .columns.small-3
+          .swatch{style: "background-color: #e74c3c;"}
+            $red | #e74c3c
+        .columns.small-3
+          .swatch{style: "background-color: #27ae60;"}
+            $green | #27ae60
+        .columns.small-3
+          .swatch{style: "background-color: #34495e;"}
+            $stone | #34495e
+        .columns.small-3
+          .swatch{style: "background-color: #7f8c8d;"}
+            $gray-dark | #7f8c8d
+        .columns.small-3
+          .swatch{style: "background-color: #ecf0f1;"}
+            .text--dark $gray-light | #ecf0f1
+        .columns.small-3
+          .swatch.swatch--bordered{style: "background-color: #ffffff;"}
+            .text--dark $white | #ffffff
+        .columns.small-3
+          .swatch{style: "background-color: #333333;"}
+            $black | #333333
+
+

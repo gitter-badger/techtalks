@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get "styleguide" => "static#styleguide"
+
   root to: "groups#index"
 
   mount Rack::GitSha => '/sha'
