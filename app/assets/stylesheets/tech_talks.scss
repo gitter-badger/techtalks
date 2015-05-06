@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 
 $radius: 3px;
+$monospace: Consolas, monaco, monospace;
 
 $turquoise: #1abc9c;
 $turquoise-dark: #16a085;
@@ -120,6 +121,7 @@ header {
   margin-bottom: $spacing;
   text-align: center;
   color: $white;
+  font-family: $monospace;
 
   &--bordered {
     border: 1px solid $gray;
