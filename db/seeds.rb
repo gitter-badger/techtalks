@@ -10,7 +10,11 @@ group = Group.create({
   title: "Bristol JS"
 })
 
-event = Event.create({
-  title: "Some event title",
-  group_id: group.id
-})
+events = []
+
+(1..10).each do |i|
+  events << Event.create({
+    title: "Talk Night ##{i}",
+    group_id: group.id
+  })
+end
