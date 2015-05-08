@@ -1,40 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
-
-$radius: 3px;
-$monospace: Consolas, monaco, monospace;
-
-$turquoise: #1abc9c;
-$turquoise-dark: #16a085;
-
-$green: #27ae60;
-$green-light: #2ecc71;
-
-$blue-light: #3498db;
-$blue: #2980b9;
-
-$purple-light: #9b59b6;
-$purple: #8e44ad;
-
-$stone-light: #34495e;
-$stone: #2c3e50;
-
-$yellow: #f1c40f;
-$yellow-dark: #f39c12;
-
-$orange: #e67e22;
-$orange-muted: #d35400;
-
-$red: #e74c3c;
-$red-dark: #c0392b;
-
-$white: #fff;
-$gray-light: #ecf0f1;
-$gray: #bdc3c7;
-$gray-dark: #95a5a6;
-$gray-darker: #7f8c8d;
-$black: #333; // <- its all lies! Muhaahaha!
-
-$spacing: 20px;
+@import 'foundation_and_overrides';
 
 body {
   background: $orange;
@@ -57,8 +22,31 @@ small {
   font-size: 0.8em;
 }
 
+.button {
+  border: 1px solid $primary-color;
+  border-radius: $global-radius;
+  padding: $spacing / 2;
+  display: inline-block;
+  margin-bottom: $spacing;
+  text-align: center;
+
+  &--block {
+    display: block;
+  }
+
+  &--positive {
+    border-color: $green;
+    color: $green;
+  }
+
+  &--negative {
+    border-color: $red;
+    color: $red;
+  }
+}
+
 .meta {
-  border-radius: 2px;
+  // border-radius: 2px;
   font-weight: bold;
   font-size: 0.6em;
   text-transform: uppercase;
@@ -66,7 +54,7 @@ small {
   display: inline-block;
   padding: 0 4px;
   color: $white;
-  margin-bottom: $spacing / 2;
+  // margin-bottom: $spacing / 2;
 }
 
 .hard-left {
@@ -106,7 +94,6 @@ header {
   h1 {
     font-size: 3.5em;
     color: $white;
-    padding-bottom: $spacing;
   }
 }
 
@@ -115,13 +102,13 @@ header {
 }
 
 .swatch {
-  border-radius: $radius;
+  margin-bottom: $spacing;
+  border-radius: $global-radius;
   padding: 10px;
   padding-top: 40px;
-  margin-bottom: $spacing;
   text-align: center;
   color: $white;
-  font-family: $monospace;
+  font-family: $font-family-monospace;
 
   &--bordered {
     border: 1px solid $gray;

@@ -57,6 +57,8 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+$spacing: rem-calc(30);
+
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
 
@@ -69,14 +71,14 @@
 // $base-line-height: 150%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
-$include-html-classes: true;
+$include-html-classes: false;
 // $include-print-styles: true;
-$include-html-global-classes: $include-html-classes;
+$include-html-global-classes: true;
 
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-grid-classes: $include-html-classes;
+$include-html-grid-classes: true;
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
@@ -97,32 +99,43 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+$turquoise: #1abc9c;
+$turquoise-dark: #16a085;
+
+$green: #27ae60;
+$green-light: #2ecc71;
+
+$blue-light: #3498db;
+$blue: #2980b9;
+
+$purple-light: #9b59b6;
+$purple: #8e44ad;
+
+$stone-light: #34495e;
+$stone: #2c3e50;
+
+$yellow: #f1c40f;
+$yellow-dark: #f39c12;
+
+$orange: #e67e22;
+$orange-muted: #d35400;
+
+$red: #e74c3c;
+$red-dark: #c0392b;
+
+$white: #fff;
+$gray-light: #ecf0f1;
+$gray: #bdc3c7;
+$gray-dark: #95a5a6;
+$gray-darker: #7f8c8d;
+$black: #333; // <- its all lies! Muhaahaha!
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
+$primary-color: $orange;
+$secondary-color: $stone;
+$alert-color: $orange;
+$success-color: $green;
+$warning-color: $red;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
@@ -142,7 +155,7 @@ $include-html-global-classes: $include-html-classes;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -195,7 +208,7 @@ $include-html-global-classes: $include-html-classes;
 // e. Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-type-classes: $include-html-classes;
+$include-html-type-classes: true;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
@@ -619,7 +632,7 @@ $include-html-global-classes: $include-html-classes;
 // 11. Forms
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-form-classes: $include-html-classes;
+$include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
 // $form-spacing: rem-calc(16);
@@ -927,7 +940,7 @@ $include-html-global-classes: $include-html-classes;
 // Hide controls on small
 // $orbit-nav-hide-for-small: true;
 // $orbit-bullet-hide-for-small: true;
-// $orbit-timer-hide-for-small: true; 
+// $orbit-timer-hide-for-small: true;
 
 // 20. Pagination
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1265,7 +1278,7 @@ $include-html-global-classes: $include-html-classes;
 // $switch-paddle-bg: $white;
 // $switch-paddle-transition-speed: .15s;
 // $switch-paddle-transition-ease: ease-out;
-// $switch-active-color: $primary-color; 
+// $switch-active-color: $primary-color;
 
 // 30. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1456,7 +1469,7 @@ $include-html-global-classes: $include-html-classes;
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
-// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li// 
+// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
 
 // 36. Visibility Classes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
