@@ -23,12 +23,21 @@ small {
 }
 
 .button {
+  transition: all 60ms ease-in-out;
   border: 1px solid $primary-color;
   border-radius: $global-radius;
   padding: $spacing / 2;
   display: inline-block;
   margin-bottom: $spacing;
   text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &:hover {
+    // font-weight: 500;
+    color: $white;
+    // transform: scale(1.05);
+  }
 
   &--block {
     display: block;
@@ -37,11 +46,19 @@ small {
   &--positive {
     border-color: $green;
     color: $green;
+
+    &:hover {
+      background: $green;
+    }
   }
 
   &--negative {
     border-color: $red;
     color: $red;
+
+    &:hover {
+      background: $red;
+    }
   }
 }
 
