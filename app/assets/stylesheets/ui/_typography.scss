@@ -17,3 +17,22 @@ small {
 .hard-left {
   border-left: 2px solid $gray-light;
 }
+
+a {
+  font-weight: 500;
+}
+
+.blockquote--comment {
+  border-radius: $global-radius;
+  position: relative;
+  background: $gray-light;
+  padding: $spacing;
+  border: none;
+
+  &:before {
+    @include triangle(left, $gray-light, $spacing / 4);
+    position: absolute;
+    right: 100%;
+    bottom: 35px;
+  }
+}
