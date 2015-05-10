@@ -1,0 +1,25 @@
+.button {
+  padding: $spacing / 2;
+  display: inline-block;
+  margin-bottom: $spacing;
+
+  &:hover {
+    color: $white;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--secondary {
+    @include button-builder($stone);
+  }
+
+  &--positive {
+    @include button-builder($green);
+  }
+
+  &--negative {
+    @include button-builder($red);
+  }
+}

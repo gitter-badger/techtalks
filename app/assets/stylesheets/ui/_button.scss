@@ -1,0 +1,28 @@
+.button {
+  @include button-builder($primary-color);
+  border: 1px solid;
+  border-radius: $global-radius;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $white;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--secondary {
+    @include button-builder($stone);
+  }
+
+  &--positive {
+    @include button-builder($green);
+  }
+
+  &--negative {
+    @include button-builder($red);
+  }
+}

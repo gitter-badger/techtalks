@@ -1,0 +1,9 @@
+@mixin button-builder($color) {
+  border-color: $color;
+  color: $color;
+
+  &:hover {
+    color: $white;
+    background: $color;
+  }
+}
