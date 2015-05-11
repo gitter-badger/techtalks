@@ -85,6 +85,8 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    entypo-rails (2.2.3)
+      railties (>= 3.1, <= 5)
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.5.2)
@@ -285,6 +287,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.1)
   dotenv-rails
+  entypo-rails (~> 2.2.3)
   factory_girl
   foundation-rails (~> 5.5.1.2)
   friendly_id (~> 5.1.0)

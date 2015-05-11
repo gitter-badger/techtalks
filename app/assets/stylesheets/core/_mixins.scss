@@ -2,9 +2,15 @@
   border-color: $color;
   color: $color;
 
-  &:hover {
+  &:hover, &.button--active {
     color: $white;
     background: $color;
+  }
+
+  &.button--active {
+    &:hover {
+      background: lighten($color, 5%);
+    }
   }
 }
 

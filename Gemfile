@@ -54,6 +54,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'foundation-rails', '~> 5.5.1.2'
 gem 'breadcrumbs_on_rails', '~> 2.3.0'
 gem 'devise', '~> 3.4.1'
+gem 'entypo-rails', '~> 2.2.3'
 
 group :development do
   gem 'better_errors'

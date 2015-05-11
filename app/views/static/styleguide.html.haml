@@ -37,6 +37,40 @@
       %a.button.button--negative{href: "#"} I am an alert button
       %a.button.button--block{href: "#"} I am an expanded button
 
+      %a.button.button--active{href: "#"} I am a primary button
+      %a.button.button--secondary.button--active{href: "#"} I am a secondary button
+      %a.button.button--positive.button--active{href: "#"} I am a success button
+      %a.button.button--negative.button--active{href: "#"} I am an alert button
+      %a.button.button--block.button--active{href: "#"} I am an expanded button
+
+      %h3.subtle RSVP
+
+      .row
+        .columns.small-12.medium-3
+          %a.button.button--negative.button--block{href: "#"} RSVP No
+        .columns.small-12.medium-3.end
+          %a.button.button--positive.button--block{href: "#"} RSVP Yes
+
+      %h3.subtle RSVP No
+
+      .row
+        .columns.small-12.medium-3
+          %a.button.button--negative.button--active.button--block{href: "#"}
+            %i.icon-check
+            RSVP No
+        .columns.small-12.medium-3.end
+          %a.button.button--positive.button--block{href: "#"} RSVP Yes
+
+      %h3.subtle RSVP Yes
+
+      .row
+        .columns.small-12.medium-3
+          %a.button.button--negative.button--block{href: "#"} RSVP No
+        .columns.small-12.medium-3.end
+          %a.button.button--positive.button--active.button--block{href: "#"}
+            %i.icon-check
+            RSVP Yes
+
     %h2 Colors
     %section
       .row
