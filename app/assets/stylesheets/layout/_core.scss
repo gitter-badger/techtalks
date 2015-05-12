@@ -9,3 +9,17 @@ body {
   background: linear-gradient(135deg,  $primary-color 0%,$red 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$red',GradientType=1 );
 }
+
+.logo {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background: image-url("logo.png");
+  width: 324px;
+  height: 109px;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: $spacing;
+}
