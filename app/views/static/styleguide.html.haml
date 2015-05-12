@@ -31,17 +31,19 @@
 
     %h2 Buttons
     %section
-      %a.button{href: "#"} I am a primary button
-      %a.button.button--secondary{href: "#"} I am a secondary button
-      %a.button.button--positive{href: "#"} I am a success button
-      %a.button.button--negative{href: "#"} I am an alert button
-      %a.button.button--block{href: "#"} I am an expanded button
+      %a.button{href: "#"} primary button
+      %a.button.button--secondary{href: "#"} secondary button
+      %a.button.button--positive{href: "#"} success button
+      %a.button.button--negative{href: "#"} alert button
+      %input.button{type: "submit", value: "input submit"}
+      %a.button.button--block{href: "#"} expanded button
 
-      %a.button.button--active{href: "#"} I am a primary button
-      %a.button.button--secondary.button--active{href: "#"} I am a secondary button
-      %a.button.button--positive.button--active{href: "#"} I am a success button
-      %a.button.button--negative.button--active{href: "#"} I am an alert button
-      %a.button.button--block.button--active{href: "#"} I am an expanded button
+      %a.button.button--active{href: "#"} primary button
+      %a.button.button--secondary.button--active{href: "#"} secondary button
+      %a.button.button--positive.button--active{href: "#"} success button
+      %a.button.button--negative.button--active{href: "#"} alert button
+      %input.button.button--active{type: "submit", value: "input submit"}
+      %a.button.button--block.button--active{href: "#"} expanded button
 
       %h3.subtle RSVP
 
@@ -99,4 +101,22 @@
           .swatch{style: "background-color: #333333;"}
             $black | #333333
 
+    %h2 Forms
+    %section
 
+      %form
+        .row
+          .columns.small-12.large-6
+            %label
+              First name
+              %input{type: "text"}
+
+            %label
+              Surname
+              %input{type: "text"}
+
+            %label
+              Date of birth
+              %input{type: "date"}
+
+            %input.button.pull-right{type: "submit"}

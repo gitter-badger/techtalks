@@ -5,6 +5,8 @@
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
+  background: $white;
+  font-size: $paragraph-font-size;
 
   &:hover {
     color: $white;
@@ -25,4 +27,9 @@
   &--negative {
     @include button-builder($red);
   }
+}
+
+input[type="submit"] {
+  border-radius: $global-radius;
+  line-height: $paragraph-line-height;
 }
