@@ -6,6 +6,10 @@ small {
   font-size: 0.8em;
 }
 
+input {
+  font-family: $font-family-sans-serif;
+}
+
 .subtle {
   color: $gray-darker;
 }
