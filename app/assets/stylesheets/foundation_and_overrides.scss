@@ -389,7 +389,7 @@ $include-html-type-classes: true;
 // 03. Block Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-block-grid-classes: $include-html-classes;
+$include-html-block-grid-classes: true;
 // $include-xl-html-block-grid-classes: false;
 
 // We use this to control the maximum number of block grid elements per row
@@ -1348,7 +1348,7 @@ $include-html-label-classes: true;
 // 32. Thumbnails
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-media-classes: $include-html-classes;
+$include-html-media-classes: true;
 
 // We use these to control border styles
 // $thumb-border-style: solid;

@@ -5,3 +5,10 @@
 .pull-right {
   float: right;
 }
+
+.padded {
+  padding: $spacing / 4 $spacing / 2;
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
