@@ -1,6 +1,9 @@
 .row
   .columns.small-12.text-center
-    %h2= @event.title
+    %h2
+      = @event.group.title
+      \-
+      = @event.title
     %h3.subtle
       1st April 2015
       &bull;
@@ -28,12 +31,13 @@
         = link_to "RSVP Yes", "#", class: "button button--block button--positive"
 
     - (1..50).each do |i|
-      .row
-        .columns.small-4
-          %img.avatar{src: "http://api.randomuser.me/portraits/men/#{i}.jpg"}
-        .columns.small-8.hard-left
+      .media
+        .media-left
+          %a{href: "#"}
+            = image_tag "http://api.randomuser.me/portraits/men/#{i}.jpg", class: "media-object avatar", width: 94, height: 94
+        .media-body
           %h5.tight Adam Butler
           %span.label Joined 1st April 2015
-          %p.subtle.tight Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-      %br
+          %p.subtle.tight Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      %hr
 %hr

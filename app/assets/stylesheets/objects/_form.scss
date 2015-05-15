@@ -1,9 +1,13 @@
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
   padding: $spacing / 2;
   display: inline-block;
-  margin-bottom: $spacing;
   margin-right: $spacing / 4;
   line-height: $paragraph-line-height;
   height: auto;
   margin-top: $spacing / 4;
+  margin-bottom: 0;
+}
+
+label {
+  margin-bottom: 0;
 }

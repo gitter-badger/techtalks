@@ -1,0 +1,23 @@
+.media {
+  margin-bottom: $spacing;
+}
+
+.media, .media-body {
+  @extend .clearfix;
+}
+
+.media-object {
+  display: block;
+}
+
+.media {
+  > .media-left {
+    float: left;
+    margin-right: $spacing / 2;
+  }
+  > .right {
+    float: right;
+    margin-left: $spacing;
+  }
+}
+

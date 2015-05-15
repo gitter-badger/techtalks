@@ -7,6 +7,7 @@
   letter-spacing: 1px;
   background: $white;
   font-size: $paragraph-font-size;
+  cursor: pointer;
 
   &:hover {
     color: $white;
@@ -14,6 +15,10 @@
 
   &--block {
     display: block;
+  }
+
+  &--primary {
+    @include button-builder($purple);
   }
 
   &--secondary {
