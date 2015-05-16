@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150501163038) do
+ActiveRecord::Schema.define(version: 20150516173943) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20150501163038) do
     t.string   "meetup_url",   limit: 255
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.string   "logo",         limit: 255
   end
 
   add_index "groups", ["slug"], name: "index_groups_on_slug", unique: true, using: :btree
