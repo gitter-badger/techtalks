@@ -25,7 +25,7 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:title, :description, :website_url, :youtube_url, :twitter_url, :facebook_url, :meetup_url)
+    params.require(:group).permit(:title, :description, :website_url, :youtube_url, :twitter_url, :facebook_url, :meetup_url, :logo)
   end
 
   def set_group
