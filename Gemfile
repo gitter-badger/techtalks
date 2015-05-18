@@ -56,8 +56,8 @@ gem 'breadcrumbs_on_rails', '~> 2.3.0'
 gem 'devise', '~> 3.4.1'
 gem 'entypo-rails', '~> 2.2.3'
 
-# Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends.
-gem 'carrierwave', '~> 0.10.0'
+# Easy upload management for ActiveRecord
+gem 'paperclip', '~> 4.2.1'
 
 group :development do
   gem 'better_errors'

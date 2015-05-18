@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516173943) do
+ActiveRecord::Schema.define(version: 20150518191929) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -34,17 +34,20 @@ ActiveRecord::Schema.define(version: 20150516173943) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.string   "title",        limit: 255
-    t.string   "slug",         limit: 255
-    t.text     "description",  limit: 65535
-    t.string   "website_url",  limit: 255
-    t.string   "youtube_url",  limit: 255
-    t.string   "twitter_url",  limit: 255
-    t.string   "facebook_url", limit: 255
-    t.string   "meetup_url",   limit: 255
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.string   "logo",         limit: 255
+    t.string   "title",             limit: 255
+    t.string   "slug",              limit: 255
+    t.text     "description",       limit: 65535
+    t.string   "website_url",       limit: 255
+    t.string   "youtube_url",       limit: 255
+    t.string   "twitter_url",       limit: 255
+    t.string   "facebook_url",      limit: 255
+    t.string   "meetup_url",        limit: 255
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "logo_file_name",    limit: 255
+    t.string   "logo_content_type", limit: 255
+    t.integer  "logo_file_size",    limit: 4
+    t.datetime "logo_updated_at"
   end
 
   add_index "groups", ["slug"], name: "index_groups_on_slug", unique: true, using: :btree

@@ -9,5 +9,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 label {
-  margin-bottom: 0;
+  margin-bottom: $spacing / 4;
+}
+
+.input {
+  margin-bottom: $spacing;
 }
