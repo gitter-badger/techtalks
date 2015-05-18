@@ -8,6 +8,6 @@
     %li
       = link_to group do
         .card.card--tight.text-center
-          %img{:src => "https://cloud.githubusercontent.com/assets/1238468/7652251/914bded8-fb02-11e4-91e2-fe88bb82e631.jpg"}
+          = image_tag group.logo.url
           .padded
             %h4= group.title
