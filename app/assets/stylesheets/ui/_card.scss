@@ -2,4 +2,28 @@
   background: $white;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: $global-radius;
+
+  &-header {
+    background-size: cover;
+    background-position: center;
+
+    &--darken:before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: rgba($jet-black, 0.5);
+      z-index: 1;
+
+      > * {
+        z-index: 2;
+        position: absolute;
+      }
+    }
+
+    h2 {
+      font-size: 3em;
+      text-shadow: 0 0 8px rgba($black, 0.8);
+    }
+    * { color: $white; }
+  }
 }

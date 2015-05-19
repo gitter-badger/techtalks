@@ -1,9 +1,21 @@
+$heading-height: 280px;
+
 .card {
   overflow: hidden;
   padding: $spacing;
-  margin: 4px;
 
   &--tight {
     padding: 0;
+  }
+
+  &-header {
+    padding: $spacing;
+    position: relative;
+    top: -$spacing;
+    margin-left: -$spacing;
+    margin-right: -$spacing;
+    padding-top: $heading-height;
+
+    * { margin: 0; }
   }
 }
