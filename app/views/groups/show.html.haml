@@ -1,5 +1,6 @@
-.card-header.card-header--darken{ style: "background-image: url(#{@group.logo.url});" }
-  %h2= @group.title
-
-
-= render partial: "events/index"
+.row.row--fluid
+  .columns.small-12.medium-3.large-2
+    = image_tag @group.logo.url
+    %h2= @group.title
+  .columns.small-12.medium-9.large-10
+    = render partial: "events/index"
