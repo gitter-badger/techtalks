@@ -4,4 +4,5 @@ class Rsvp < ActiveRecord::Base
   belongs_to :user
 
   scope :attending, -> { where(attending: true) }
+  scope :not_attending, -> { where(attending: false) }
 end

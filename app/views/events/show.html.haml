@@ -30,6 +30,9 @@
       .columns.small-6
         = link_to "RSVP Yes", "#", class: "button button--block button--positive"
 
+    %h4 Attending
+    %hr
+
     - @event.rsvps.attending.each_with_index do |rsvp, i|
       .media
         .media-left
@@ -40,5 +43,22 @@
             = rsvp.user.full_name
           %span.label Joined 1st April 2015
           %p.subtle.tight Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-      %hr
+      - unless rsvp == @event.rsvps.attending.last
+        %hr
+
+    %h4 Not Attending
+    %hr
+
+    - @event.rsvps.not_attending.each_with_index do |rsvp, i|
+      .media
+        .media-left
+          %a{href: "#"}
+            = image_tag "http://api.randomuser.me/portraits/men/#{i}.jpg", class: "media-object avatar", width: 94, height: 94
+        .media-body
+          %h5.tight
+            = rsvp.user.full_name
+          %span.label Joined 1st April 2015
+          %p.subtle.tight Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      - unless rsvp == @event.rsvps.not_attending.last
+        %hr
 %hr
