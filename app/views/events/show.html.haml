@@ -30,7 +30,7 @@
       .columns.small-6
         = link_to "RSVP Yes", "#", class: "button button--block button--positive"
 
-    - @event.rsvps.each_with_index do |rsvp, i|
+    - @event.rsvps.attending.each_with_index do |rsvp, i|
       .media
         .media-left
           %a{href: "#"}
@@ -38,8 +38,6 @@
         .media-body
           %h5.tight
             = rsvp.user.full_name
-            %small
-              = rsvp.attending
           %span.label Joined 1st April 2015
           %p.subtle.tight Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
       %hr
