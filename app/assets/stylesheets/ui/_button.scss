@@ -5,7 +5,6 @@
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
-  background: $white;
   font-size: $paragraph-font-size;
   cursor: pointer;
 
@@ -31,6 +30,14 @@
 
   &--negative {
     @include button-builder($red);
+  }
+
+  &--glass {
+    @include button-builder(rgba($white, 0.6));
+    &:hover {
+      background: none;
+      box-shadow: 0 0 0 1px $white;
+    }
   }
 }
 

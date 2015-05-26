@@ -13,6 +13,11 @@
     margin-right: 0;
   }
 
+  &--short {
+    padding-top: $spacing / 4;
+    padding-bottom: $spacing / 4;
+  }
+
   &--block {
     display: block;
     margin-right: 0;
