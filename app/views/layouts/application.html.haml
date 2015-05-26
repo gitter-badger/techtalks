@@ -33,6 +33,9 @@
       = link_to root_path do
         %h1.logo techtalks
 
+      = link_to "Login", new_user_session_path, class: "button button--glass button--short"
+      = link_to "Register", new_user_registration_path, class: "button button--glass button--short"
+
     .card
       = yield
 
