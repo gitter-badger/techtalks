@@ -1,5 +1,7 @@
 # Tech Talks
 
+[![Join the chat at https://gitter.im/techtalks/techtalks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/techtalks/techtalks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Host tech events with RSVP, Photo, Notifications, Videos and more.
 
 > A WIP project... most functionality is in development
